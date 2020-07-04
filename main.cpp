@@ -11,6 +11,7 @@ int main()
     Log(fred.GetName());
 
     Dog spot;
+    spot.SetName("Spot");
     spot.MakeSound();
 
     return 0;
