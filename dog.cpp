@@ -1,7 +1,8 @@
-#include "dog.h"
 #include <iostream>
+#include "dog.h"
+#include "log.h"
 
 void Dog::MakeSound()
 {
-    std::cout << "Woof" << std::endl;
+    Log("Woof");
 }
