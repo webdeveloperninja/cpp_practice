@@ -1,6 +1,7 @@
 #include <iostream>
 #include "log.h"
 #include "Animal.h"
+#include "Dog.h"
 
 int main()
 {
@@ -8,6 +9,9 @@ int main()
     fred.SetName("Fred");
 
     Log(fred.GetName());
+
+    Dog spot;
+    spot.MakeSound();
 
     return 0;
 }
