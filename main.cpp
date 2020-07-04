@@ -1,10 +1,13 @@
 #include <iostream>
 #include "log.h"
-#include "math.h"
+#include "Animal.h"
 
 int main()
 {
-    const int number1 = 2;
-    Log("Hi");
+    Animal fred;
+    fred.SetName("Fred");
+
+    Log(fred.GetName());
+
     return 0;
 }
