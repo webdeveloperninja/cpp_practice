@@ -1,8 +1,6 @@
-#pragma once
-#include "Animal.h"
+#include "Dog.h"
 
-class Dog : public Animal
+void Dog::MakeSound()
 {
-public:
-    void MakeSound();
-};
+    std::cout << "Woof" << std::endl;
+}
