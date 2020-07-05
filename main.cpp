@@ -5,14 +5,20 @@
 
 int main()
 {
-    Animal fred;
-    fred.SetName("Fred");
+    std::string name = "Robert Smith";
 
-    Log(fred.GetName());
+    for (std::size_t i = 0; i < name.size(); ++i)
+    {
+        std::cout << std::bitset<8>(name.c_str()[i]) << std::endl;
+    }
 
-    Dog spot;
-    spot.SetName("Spot");
-    spot.MakeSound();
+    const std::bitset<8> bytes("01010010");
+
+    unsigned long i = bytes.to_ulong();
+
+    char c;
+    if (i <= CHAR_MAX)
+        c = static_cast<char>(i);
 
     return 0;
 }
